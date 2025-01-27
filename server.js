@@ -9,10 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // mongodb+srv://ashutosh19jics022:<db_password>@cluster0.3eegy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-mongoose.connect('mongodb+srv://ashutosh19jics022:Ashusintu%2304@cluster0.3eegy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => {
+mongoose.connect('mongodb+srv://ashutosh19jics022:Ashusintu%2304@cluster0.3eegy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', ).then(() => {
   console.log('Connected to MongoDB');
 }).catch((error) => {
   console.error('Error connecting to MongoDB:', error);
